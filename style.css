@@ -1,0 +1,134 @@
+html {
+    background-color: #090101;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    background-color: #ee50a9;
+    margin: 0 auto;
+    border: 5px solid #e81474;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*timers*/
+.label {
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#work {
+    grid-area: 1 / 2 / 1 / 2;
+}
+#break {
+    grid-area: 1 / 4 / 1 / 4;
+}
+#cycles {
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+.timer {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    margin: 10;
+    padding: 20;
+}
+
+#counter {
+    grid-area: 2 / 3 / 2 / 3;
+    color: rgb(237, 15, 15);
+}
+
+#work-timer {
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+#break-timer {
+    grid-area: 2 / 4 / 2 / 4;
+}
+
+/*buttons*/
+
+.btn {
+    align-self: center;
+    justify-self: center;
+
+    width: 100px;
+    height: 30px;
+
+    font-size: 20px;
+
+    border: 2px solid #3498db;
+    background-color: rgb(225, 124, 193);
+    padding: 10px, 10px;
+    cursor: pointer;
+    margin:10px;
+    transition: 0.8s;
+    position: relative;
+}
+
+#start:hover {
+    /* grid-area: 22 / 2 / 3 / 2; */
+    color:#7e415d;
+}
+/* #start::before {
+    grid-area: 22 / 2 / 3 / 2;
+    color:#fd0072; 
+    bottom: 0;
+} */
+
+#reset:hover {
+    /* grid-area: 3 / 3 / 3 / 3; */
+    color:#fd0072;
+}
+/* #reset::before {
+    grid-area: 3 / 3 / 3 / 3;
+    color:#fd0072;
+    top:100%;
+} */
+
+#stop:hover {
+    /* grid-area: 3 / 4 / 3 / 4; */
+    color:#fd0072;
+}
+/* #stop::before {
+    grid-area: 3 / 4 / 3 / 4;
+    color:#a23767;
+} */
+
+/* .btn::before{
+    position: absolute;
+    content: "";
+
+    align-self: center;
+    justify-self: center;
+
+    width: 100%;
+    height: 30%; 
+    background: #fd0072;
+    z-index: -1;
+    transition: 0.8s;
+    border: 2px solid #3498db;
+    padding: 10px, 10px;
+} */
